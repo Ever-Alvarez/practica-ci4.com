@@ -16,6 +16,10 @@ class Productos extends BaseController {
     public function detallesProductos() {
         return view('/productos/detallesProductos');
     }
+
+    public function editar() {
+        return view('/productos/editar');
+    }
 }
 
 ?>

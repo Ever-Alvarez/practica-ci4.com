@@ -12,3 +12,4 @@ $routes->get('/', 'Home::index');
 
 $routes->get('/productos', 'Productos::index');
 $routes->get('/productos/detallesProductos', 'Productos::detallesProductos');
+$routes->get('/productos/editar', 'Productos::editar');
