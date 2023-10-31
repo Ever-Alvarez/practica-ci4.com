@@ -17,8 +17,8 @@ class Productos extends BaseController {
         return view('/productos/detallesProductos');
     }
 
-    public function editar() {
-        return view('/productos/editar');
+    public function catalogo($categoria ,$id) {
+        return "Categoria: $categoria <br> id producto: $id";
     }
 }
 

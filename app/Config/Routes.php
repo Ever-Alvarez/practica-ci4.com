@@ -12,4 +12,8 @@ $routes->get('/', 'Home::index');
 
 $routes->get('/productos', 'Productos::index');
 $routes->get('/productos/detallesProductos', 'Productos::detallesProductos');
-$routes->get('/productos/editar', 'Productos::editar');
+
+//*Ruta con parametro, la funcion se cambia por el tipo de dato del parametro
+
+//*Podemos pedirle mas parametros
+$routes->get('/productos/(:alpha)/(:num)', 'Productos::catalogo/$1/$2');
