@@ -1,3 +1,7 @@
+## Esta es una practica. Uso VSCODE con la extension [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) que agrega color a los comentarios dependiendo de que simbolo escribas.
+
+## This is a practice. I use VSCODE with the [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) extension which adds color to the comments depending on what symbol you type.
+
 # CodeIgniter 4 Framework
 
 ## What is CodeIgniter?
