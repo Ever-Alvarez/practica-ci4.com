@@ -14,17 +14,36 @@ class Productos extends BaseController {
 
         $data = [
             'titulo' => 'Productos',
+            'copy' => '12-11-2023 5:00 pm'
         ];
 
-        return view('/productos/index', $data);
+        return view('/plantillas/header', $data)
+        .view('/productos/index', $data)
+        .view('/plantillas/footer');
     }
 
     public function detallesProductos() {
-        return view('/productos/detallesProductos');
+
+        $data = [
+            'titulo' => 'Detalles del Productos',
+            'copy' => '12-11-2023 5:05 pm',
+        ];
+
+        return view('/plantillas/header', $data)
+        .view('/productos/detallesProductos', $data)
+        .view('/plantillas/footer', $data);
+
     }
 
     public function catalogo($categoria ,$id) {
+
+        $data = [
+            'titulo' => 'Productos',
+        ];
+
+        echo view('/plantillas/header', $data);
         return "Categoria: $categoria <br> id producto: $id";
+        echo ('/plantillas/footer');
     }
 }
 
