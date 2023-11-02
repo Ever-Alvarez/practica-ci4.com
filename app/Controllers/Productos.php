@@ -6,17 +6,17 @@ class Productos extends BaseController {
 
     //*Para que la funcion pueda encontrarse en el navegador necesitamos definir la ruta de la funcion
 
-    //*Por ahora vamos a pasar datos estaticosm, mas adelante lo haremos con BD.
+    //*Por ahora vamos a pasar datos estaticos, mas adelante lo haremos con BD.
 
     public function index() {
 
         //* Para poder enviar la información necesitamos un arreglo
 
         $data = [
-            'titulo' => 'Catalogo de Productos',
+            'titulo' => 'Productos',
         ];
 
-        return view('/productos/index');
+        return view('/productos/index', $data);
     }
 
     public function detallesProductos() {
