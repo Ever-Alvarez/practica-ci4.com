@@ -15,6 +15,6 @@ class Home extends BaseController
         //*Tambien puedes retornar mensajes o impresiones
         return view('/plantillas/header', $data)
         .view('index', $data)
-        .view('/plantillas/footer');;
+        .view('/plantillas/footer', ['copy' => '3-11-2023 00:40']);;
     }
 }
